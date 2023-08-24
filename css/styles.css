@@ -643,6 +643,7 @@ header a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  gap: 24px;
 }
 
 .subscribe-form-title {
@@ -659,11 +660,9 @@ header a {
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
-  margin-right: 24px;
 
-  font-family: Roboto;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 
   border-radius: 4px;
@@ -681,9 +680,9 @@ header a {
 .subscribe-form-btn {
   display: inline-flex;
   padding: 8px 24px;
+  min-width: 165px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 
   border-radius: 4px;
   border-style: none;
@@ -705,6 +704,7 @@ header a {
 }
 
 .subscribe-form-btn-icon {
+  margin-left: 16px;
   fill: var(--white, #ffffff);
 }
 
@@ -789,21 +789,20 @@ header a {
   fill: var(--white, #ffffff);
 }
 
-.modal-form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.modal-form-field-wrapper {
   margin-bottom: 8px;
+}
+
+.modal-form-field {
+  display: block;
+  flex-direction: column;
+  margin-bottom: 4px;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
 
   letter-spacing: 0.04em;
   color: var(--subtitle-color, #8e8f99);
-}
-
-.modal-form-field-last {
-  margin-bottom: 16px;
 }
 
 .modal-form-instruction {
