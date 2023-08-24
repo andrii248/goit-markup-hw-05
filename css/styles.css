@@ -846,8 +846,6 @@ header a {
 .modal-form-input:focus,
 .modal-form-comment:focus {
   border-color: var(--iris, #2e2f42);
-  outline-color: transparent;
-  outline-offset: 4px;
 }
 
 .modal-form-input:focus + .modal-form-input-icon {
@@ -879,11 +877,12 @@ header a {
   letter-spacing: 0.04em;
 
   border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  background-color: transparent;
+  outline: transparent;
 
-  transition: border-color var(--transition-dur-and-fn),
-    outline-color var(--transition-dur-and-fn),
-    outline-offset var(--transition-dur-and-fn);
+  transition: border-color var(--transition-dur-and-fn);
 }
 
 .modal-form-comment::placeholder {
@@ -908,7 +907,7 @@ header a {
 }
 
 .modal-form-submit-btn {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -917,6 +916,7 @@ header a {
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 
   border: none;
   border-radius: 4px;
@@ -938,6 +938,7 @@ header a {
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+  margin-bottom: 24;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
