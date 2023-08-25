@@ -964,4 +964,10 @@ header a {
   background-color: var(--ocean, #404bbf);
 }
 
+.modal-form-checkbox:focus
+  + .modal-form-checkbox-label
+  > .modal-form-checkbox-wrapper {
+  border: 1px solid var(--ocean, #404bbf);
+}
+
 /* ============== /MODAL ============== */
