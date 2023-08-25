@@ -891,7 +891,7 @@ header a {
 
 .modal-form-checkbox-label {
   display: block;
-  align-items: center;
+  width: 100%;
   margin-bottom: 24px;
   font-size: 12px;
   line-height: 1.17;
@@ -933,14 +933,18 @@ header a {
   background-color: var(--ocean, #404bbf);
 }
 
+.modal-form-checkbox-container {
+  margin-bottom: 24px;
+}
+
 .modal-form-checkbox-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 8px;
-  margin-bottom: 24px;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 
@@ -952,7 +956,9 @@ header a {
     background-color var(--transition-dur-and-fn);
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-wrapper {
+.modal-form-checkbox:checked
+  + .modal-form-checkbox-label
+  > .modal-form-checkbox-wrapper {
   fill: var(--cloud, #f4f4fd);
   border: none;
   background-color: var(--ocean, #404bbf);
