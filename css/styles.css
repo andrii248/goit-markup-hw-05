@@ -784,7 +784,7 @@ button {
 
 .modal-form-input:focus,
 .modal-form-comment:focus {
-  border-color: var(--iris, #2e2f42);
+  border-color: var(--iris, #4d5ae5);
 }
 
 .modal-form-input:focus + .modal-form-input-icon {
