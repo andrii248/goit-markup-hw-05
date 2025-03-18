@@ -598,7 +598,7 @@ button {
   padding-bottom: 8px;
 
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 0.04em;
 
   border-radius: 4px;
@@ -674,6 +674,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  min-height: 584px;
   width: 408px;
 
   padding: 72px 24px 24px;
