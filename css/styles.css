@@ -714,8 +714,8 @@ button {
 
 .close-btn:hover,
 .close-btn:focus {
-  background-color: #404bbf;
   border: none;
+  background-color: var(--ocean, #404bbf);
 }
 
 .close-btn-icon {
@@ -897,16 +897,16 @@ button {
 }
 
 .modal-form-checkbox:checked
-  + .modal-form-checkbox-label
-  > .modal-form-checkbox-wrapper {
+  ~ .modal-form-checkbox-label
+  .modal-form-checkbox-wrapper {
   fill: var(--cloud, #f4f4fd);
   border: none;
   background-color: var(--ocean, #404bbf);
 }
 
 .modal-form-checkbox:focus
-  + .modal-form-checkbox-label
-  > .modal-form-checkbox-wrapper {
+  ~ .modal-form-checkbox-label
+  .modal-form-checkbox-wrapper {
   border: 1px solid var(--ocean, #404bbf);
 }
 
