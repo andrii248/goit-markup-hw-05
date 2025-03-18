@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,28 +12,29 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- #region HEADER -->
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-header-nav">
-          <a href="./index.html" class="page-logo page-header-logo link"
+          <a href="./index.html" class="page-logo page-logo-header link"
             >Web<span class="page-logo-colored">Studio</span></a
           >
           <ul class="page-header-list list">
             <li class="page-header-item">
-              <a href="./index.html" class="page-active page-header-link link"
+              <a href="./index.html" class="page-header-link link page-active"
                 >Studio</a
               >
             </li>
             <li class="page-header-item">
-              <a href="./portfolio.html" class="page-header-link link"
-                >Portfolio</a
-              >
+              <a href="" class="page-header-link link">Portfolio</a>
             </li>
             <li class="page-header-item">
               <a href="" class="page-header-link link">Contacts</a>
@@ -59,9 +60,10 @@
         </address>
       </div>
     </header>
+    <!-- #endregion HEADER-->
 
     <main>
-      <!-- HERO -->
+      <!-- #region HERO -->
       <section class="hero section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
@@ -70,11 +72,12 @@
           </button>
         </div>
       </section>
+      <!-- #endregion HERO-->
 
-      <!-- BENEFITS -->
+      <!-- #region BENEFITS -->
       <section class="benefits section">
         <div class="container">
-          <h2 class="visually-hidden">Our Benefits</h2>
+          <h2 class="section-title visually-hidden">Our Benefits</h2>
           <ul class="benefits-list list">
             <li class="benefits-item">
               <div class="benefits-svg-container">
@@ -123,8 +126,8 @@
               </div>
               <h3 class="benefits-title">Diligence</h3>
               <p class="benefits-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
               </p>
             </li>
             <li class="benefits-item">
@@ -147,44 +150,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion BENEFITS-->
 
-      <!--WHAT WE ARE DOING -->
-      <section class="products section">
-        <div class="container">
-          <h2 class="products-title section-title">What are we doing</h2>
-          <ul class="products-list list">
-            <li class="products-item">
-              <img
-                class="products-img"
-                src="./images/what-are-we-doing/img-1.jpg"
-                alt="Desktop webpages"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="products-item">
-              <img
-                class="products-img"
-                src="./images/what-are-we-doing/img-2.jpg"
-                alt="Mobile applications"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="products-item">
-              <img
-                class="products-img"
-                src="./images/what-are-we-doing/img-3.jpg"
-                alt="Mobile webpages"
-                width="360"
-                height="300"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- OUR TEAM -->
+      <!-- #region TEAM -->
       <section class="team section">
         <div class="container">
           <h2 class="team-title section-title">Our Team</h2>
@@ -197,7 +165,7 @@
                 width="264"
                 height="260"
               />
-              <div class="team-member-data">
+              <div class="team-member-info">
                 <h3 class="team-member-name">Mark Guerrero</h3>
                 <p class="team-member-position">Product Designer</p>
                 <ul class="social-list list">
@@ -248,16 +216,14 @@
                 </ul>
               </div>
             </li>
-
             <li class="team-member">
               <img
-                class="team-member-img"
                 src="./images/team/tom.jpg"
                 alt="Tom Ford's photo"
                 width="264"
                 height="260"
               />
-              <div class="team-member-data">
+              <div class="team-member-info">
                 <h3 class="team-member-name">Tom Ford</h3>
                 <p class="team-member-position">Frontend Developer</p>
                 <ul class="social-list list">
@@ -317,7 +283,7 @@
                 width="264"
                 height="260"
               />
-              <div class="team-member-data">
+              <div class="team-member-info">
                 <h3 class="team-member-name">Camila Garcia</h3>
                 <p class="team-member-position">Marketing</p>
                 <ul class="social-list list">
@@ -368,7 +334,6 @@
                 </ul>
               </div>
             </li>
-
             <li class="team-member">
               <img
                 class="team-member-img"
@@ -377,7 +342,7 @@
                 width="264"
                 height="260"
               />
-              <div class="team-member-data">
+              <div class="team-member-info">
                 <h3 class="team-member-name">Daniel Wilson</h3>
                 <p class="team-member-position">UI Designer</p>
                 <ul class="social-list list">
@@ -431,84 +396,142 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion TEAM-->
 
-      <!-- OUR CUSTOMERS -->
-      <section class="customers section">
+      <!-- #region PORTFOLIO -->
+      <section class="portfolio section">
         <div class="container">
-          <h2 class="customers-title section-title">Customers</h2>
-          <ul class="customers-list list">
-            <li class="customers-item">
-              <a href="" class="customer-link link"
-                ><svg
-                  class="customers-icon"
-                  width="104"
-                  height="56"
-                  aria-label="customer-1 icon"
-                >
-                  <use href="./images/icons.svg#customer-1"></use></svg
-              ></a>
+          <h2 class="section-title">Our Portfolio</h2>
+          <ul class="portfolio-list list">
+            <li class="portfolio-item">
+              <div class="portfolio-overlay-wrapper">
+                <img
+                  class="projects-item-img"
+                  src="./images/pojects/bank-app.jpg"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+                <p class="overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+
+              <div class="portfolio-item-info">
+                <h3 class="portfolio-title">Banking App</h3>
+                <p class="portfolio-tag">App</p>
+              </div>
             </li>
-            <li class="customers-item">
-              <a href="" class="customer-link link"
-                ><svg
-                  class="customers-icon"
-                  width="104"
-                  height="56"
-                  aria-label="customer-2 icon"
-                >
-                  <use href="./images/icons.svg#customer-2"></use></svg
-              ></a>
+            <li class="portfolio-item">
+              <div class="portfolio-overlay-wrapper">
+                <img
+                  class="projects-item-img"
+                  src="./images/pojects/cashless-payment.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <p class="overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+
+              <div class="portfolio-item-info">
+                <h3 class="portfolio-title">Cashless Payment</h3>
+                <p class="portfolio-tag">Marketing</p>
+              </div>
             </li>
-            <li class="customers-item">
-              <a href="" class="customer-link link"
-                ><svg
-                  class="customers-icon"
-                  width="104"
-                  height="56"
-                  aria-label="customer-3 icon"
-                >
-                  <use href="./images/icons.svg#customer-3"></use></svg
-              ></a>
+            <li class="portfolio-item">
+              <div class="portfolio-overlay-wrapper">
+                <img
+                  class="projects-item-img"
+                  src="./images/pojects/meditation-app.jpg"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <p class="overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-item-info">
+                <h3 class="portfolio-title">Meditation App</h3>
+                <p class="portfolio-tag">App</p>
+              </div>
             </li>
-            <li class="customers-item">
-              <a href="" class="customer-link link"
-                ><svg
-                  class="customers-icon"
-                  width="104"
-                  height="56"
-                  aria-label="customer-4 icon"
-                >
-                  <use href="./images/icons.svg#customer-4"></use></svg
-              ></a>
+            <li class="portfolio-item">
+              <div class="portfolio-overlay-wrapper">
+                <img
+                  class="projects-item-img"
+                  src="./images/pojects/taxi-service.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <p class="overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-item-info">
+                <h3 class="portfolio-title">Taxi Service</h3>
+                <p class="portfolio-tag">Marketing</p>
+              </div>
             </li>
-            <li class="customers-item">
-              <a href="" class="customer-link link"
-                ><svg
-                  class="customers-icon"
-                  width="104"
-                  height="56"
-                  aria-label="customer-5 icon"
-                >
-                  <use href="./images/icons.svg#customer-5"></use></svg
-              ></a>
+            <li class="portfolio-item">
+              <div class="portfolio-overlay-wrapper">
+                <img
+                  class="projects-item-img"
+                  src="./images/pojects/screen-illustrator.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <p class="overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-item-info">
+                <h3 class="portfolio-title">Screen Illustrations</h3>
+                <p class="portfolio-tag">Design</p>
+              </div>
             </li>
-            <li class="customers-item">
-              <a href="" class="customer-link link"
-                ><svg
-                  class="customers-icon"
-                  width="104"
-                  height="56"
-                  aria-label="customer-6 icon"
-                >
-                  <use href="./images/icons.svg#customer-6"></use></svg
-              ></a>
+            <li class="portfolio-item">
+              <div class="portfolio-overlay-wrapper">
+                <img
+                  class="projects-item-img"
+                  src="./images/pojects/online-courses.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <p class="overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-item-info">
+                <h3 class="portfolio-title">Online Courses</h3>
+                <p class="portfolio-tag">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- #endregion PORTFOLIO-->
     </main>
 
-    <!-- FOOTER -->
+    <!-- #region FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="footer-contacts">
@@ -598,7 +621,9 @@
       </div>
     </footer>
 
-    <!-- BACKDROP WITH MODAL WINDOW-->
+    <!-- #endregion FOOTER-->
+
+    <!-- #region BACKDROP AND MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
@@ -721,6 +746,7 @@
         </form>
       </div>
     </div>
+    <!-- #endregion BACKDROP AND MODAL-->
 
     <script src="./js/modal.js"></script>
   </body>
